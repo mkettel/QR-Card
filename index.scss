@@ -1,0 +1,28 @@
+// Colors
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+// centering the card itself
+.background-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+// THE card you've all been waiting for
+.card-container {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+// image of the QR Code
+.card-img {
+  img {
+    width: 300px;
+    height: 300px;
+  }
+
+}
