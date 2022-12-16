@@ -4,6 +4,12 @@ $Light-gray: hsl(212, 45%, 89%);
 $Grayish-blue: hsl(220, 15%, 55%);
 $Dark-blue: hsl(218, 44%, 22%);
 
+// FONTS
+$main-font: 'Satoshi', sans-serif;
+
+body {
+  background-color: $Light-gray;
+}
 // centering the card itself
 .background-container {
   display: flex;
@@ -13,10 +19,13 @@ $Dark-blue: hsl(218, 44%, 22%);
 }
 // THE card you've all been waiting for
 .card-container {
+  background-color: $White;
   max-width: 300px;
   margin: 0 auto;
-  border: 1px solid black;
-  padding: 10px;
+  // border: 1px solid black;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px 5px hsl(214, 14%, 81%);
 }
 // image of the QR Code
 .card-img {
@@ -24,5 +33,26 @@ $Dark-blue: hsl(218, 44%, 22%);
     width: 300px;
     height: 300px;
   }
-
+}
+// main content container of card
+.card-content {
+  display: flex;
+  flex-direction: column;
+  color: $Dark-blue;
+  font-size: 15px;
+  margin: 0px 5px;
+}
+.card-header {
+  text-align: center;
+  margin: 10px 0px 0px;
+  font-family: $main-font;
+}
+.card-subcontent {
+  margin: 0px 15px;
+  text-align: center;
+  font-family: $main-font;
+  color: $Grayish-blue;
+}
+.subcontent {
+  text-align: center;
 }
